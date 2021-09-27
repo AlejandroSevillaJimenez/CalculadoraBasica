@@ -1,0 +1,21 @@
+﻿<Window x:Class="CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="CalcularButton" Content="Calcular" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="457,155,0,0" IsEnabled="false" IsDefault="True" Click="CalcularButton_Click"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="457,213,0,0" IsCancel="True" Click="LimpiarButton_Click"/>
+        <TextBox x:Name="Operando1TextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="275,118,0,0"/>
+        <TextBox x:Name="Operando2TextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="275,164,0,0"/>
+        <TextBox x:Name="OperadorTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="275,207,0,0" TextChanged="OperadorTextBox_TextChanged"/>
+        <TextBox x:Name="SolucionTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="275,257,0,0" IsReadOnly="True"/>
+        <TextBlock x:Name="Operando1TextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top" Margin="166,125,0,0"/>
+        <TextBlock x:Name="Operando2TextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operando 2" VerticalAlignment="Top" Margin="166,171,0,0"/>
+        <TextBlock x:Name="OperadorTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operador" VerticalAlignment="Top" Margin="166,213,0,0"/>
+        <TextBlock x:Name="SolucionTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Solucion" VerticalAlignment="Top" Margin="166,257,0,0"/>
+    </Grid>
+</Window>
